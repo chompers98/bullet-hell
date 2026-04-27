@@ -123,7 +123,9 @@ module hud (
             4'h6:    seg_n = 7'b0100000;
             4'h7:    seg_n = 7'b0001111;
             4'h8:    seg_n = 7'b0000000;
-            4'h9:    seg_n = 7'b0000100;
+            4'h9:    seg_n = 7'b0001100;   // EE354 lab convention: "9 without
+                                           //   bottom base" — Cd off, lit a,b,c,f,g.
+                                           //   See seven_segment_display_revised_tb.v.
             default: seg_n = 7'b1111111;  // BLANK
         endcase
     end

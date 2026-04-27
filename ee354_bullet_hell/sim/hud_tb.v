@@ -153,9 +153,11 @@ module hud_tb;
         // ---- T3 boundary: HP=99 → digits ones=9, tens=9 ----
         boss_hp = 7'd99;
         set_scan(3'd0);
-        check("T3.hp99_ones_seg", seg == 7'b0000100, "99 mod 10 = 9 → '9'");
+        check("T3.hp99_ones_seg", seg == 7'b0001100,
+              "99 mod 10 = 9 → '9' (EE354 lab style: no Cd, lit a,b,c,f,g)");
         set_scan(3'd1);
-        check("T3.hp99_tens_seg", seg == 7'b0000100, "99/10 mod 10 = 9 → '9'");
+        check("T3.hp99_tens_seg", seg == 7'b0001100,
+              "99/10 mod 10 = 9 → '9' (EE354 lab style)");
 
         // HP=0 → digits ones=0, tens=0
         boss_hp = 7'd0;
