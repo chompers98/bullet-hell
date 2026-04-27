@@ -67,3 +67,76 @@ set_property PACKAGE_PIN B12 [get_ports vSync]
 # ---- Disable flash chip-select (recommended when not using QSPI) ----
 set_property PACKAGE_PIN L13 [get_ports QuadSpiFlashCS]
     set_property IOSTANDARD LVCMOS33 [get_ports QuadSpiFlashCS]
+
+# ---- Player-lives LEDs (active-high) ----
+# Pin map from the Nexys A7 schematic (Digilent ref-manual).
+set_property PACKAGE_PIN H17 [get_ports {Ld[0]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[0]}]
+set_property PACKAGE_PIN K15 [get_ports {Ld[1]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[1]}]
+set_property PACKAGE_PIN J13 [get_ports {Ld[2]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[2]}]
+set_property PACKAGE_PIN N14 [get_ports {Ld[3]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[3]}]
+set_property PACKAGE_PIN R18 [get_ports {Ld[4]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[4]}]
+set_property PACKAGE_PIN V17 [get_ports {Ld[5]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[5]}]
+set_property PACKAGE_PIN U17 [get_ports {Ld[6]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[6]}]
+set_property PACKAGE_PIN U16 [get_ports {Ld[7]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[7]}]
+set_property PACKAGE_PIN V16 [get_ports {Ld[8]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[8]}]
+set_property PACKAGE_PIN T15 [get_ports {Ld[9]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[9]}]
+set_property PACKAGE_PIN U14 [get_ports {Ld[10]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[10]}]
+set_property PACKAGE_PIN T16 [get_ports {Ld[11]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[11]}]
+set_property PACKAGE_PIN V15 [get_ports {Ld[12]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[12]}]
+set_property PACKAGE_PIN V14 [get_ports {Ld[13]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[13]}]
+set_property PACKAGE_PIN V12 [get_ports {Ld[14]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[14]}]
+set_property PACKAGE_PIN V11 [get_ports {Ld[15]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Ld[15]}]
+
+# ---- Boss-HP 7-segment display (active-low cathodes, active-low anodes) ----
+# Pin map from class-provided A7_nexys7.xdc (Sharath Krishnan).
+# Bit-to-segment mapping: seg[6:0] = {Ca, Cb, Cc, Cd, Ce, Cf, Cg}.
+set_property PACKAGE_PIN T10 [get_ports {seg[6]}]   ;# Ca
+    set_property IOSTANDARD LVCMOS33 [get_ports {seg[6]}]
+set_property PACKAGE_PIN R10 [get_ports {seg[5]}]   ;# Cb
+    set_property IOSTANDARD LVCMOS33 [get_ports {seg[5]}]
+set_property PACKAGE_PIN K16 [get_ports {seg[4]}]   ;# Cc
+    set_property IOSTANDARD LVCMOS33 [get_ports {seg[4]}]
+set_property PACKAGE_PIN K13 [get_ports {seg[3]}]   ;# Cd
+    set_property IOSTANDARD LVCMOS33 [get_ports {seg[3]}]
+set_property PACKAGE_PIN P15 [get_ports {seg[2]}]   ;# Ce
+    set_property IOSTANDARD LVCMOS33 [get_ports {seg[2]}]
+set_property PACKAGE_PIN T11 [get_ports {seg[1]}]   ;# Cf
+    set_property IOSTANDARD LVCMOS33 [get_ports {seg[1]}]
+set_property PACKAGE_PIN L18 [get_ports {seg[0]}]   ;# Cg
+    set_property IOSTANDARD LVCMOS33 [get_ports {seg[0]}]
+set_property PACKAGE_PIN H15 [get_ports Dp]
+    set_property IOSTANDARD LVCMOS33 [get_ports Dp]
+
+# Anodes (active-low one-hot)
+set_property PACKAGE_PIN J17 [get_ports {An[0]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {An[0]}]
+set_property PACKAGE_PIN J18 [get_ports {An[1]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {An[1]}]
+set_property PACKAGE_PIN T9  [get_ports {An[2]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {An[2]}]
+set_property PACKAGE_PIN J14 [get_ports {An[3]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {An[3]}]
+set_property PACKAGE_PIN P14 [get_ports {An[4]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {An[4]}]
+set_property PACKAGE_PIN T14 [get_ports {An[5]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {An[5]}]
+set_property PACKAGE_PIN K2  [get_ports {An[6]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {An[6]}]
+set_property PACKAGE_PIN U13 [get_ports {An[7]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {An[7]}]
