@@ -1,0 +1,68 @@
+https://embeddedthoughts.com/2016/07/30/storing-image-data-in-block-ram-on-a-xilinx-fpga/
+
+https://ezgif.com/
+
+Updated on 11/19/2023
+
+The last link contains a video by Fall 2023 lab mentor Munir Bshara explaining how to generate sprites using Python Scripts. Here are the links he used in the video attached.
+
+https://embeddedthoughts.com/2016/07/30/storing-image-data-in-block-ram-on-a-xilinx-fpga/
+
+
+Storing Image Data in Block RAM on a Xilinx FPGA
+Now that we have a VGA synchronization circuit we can move on to designing a pixel generation circuit that specifies unique RGB data for certain pixels (i.e. an image). Before we actually go there,…
+Embedded Thoughts
+https://ezgif.com/   
+
+
+Animated GIF editor and GIF maker
+Easy to use online animated GIF maker and image editor. Upload and edit GIF images for free. Create, crop, resize, reverse, optimize and split animated GIFs, cut and resize videos, WebP and APNG animations.
+Please refer to the video and links and do get the Teaching team help in case of any doubts.
+
+From Spring 2020, we are using Nexys-4, and in Fall 2023, we are using a mix of Nexys-4 and Nexys-A7 boards
+
+The attached word document describes the EE354L_vga_demo.zip demo project.
+
+A second demo project (vga_moving_block) is attached and it is a very simple design of a red square that moves around the screen based on the directional push buttons on the Nexys-4 board.
+The background color of the VGA screen also changes based on the last button press. 
+
+Students with the A7 boards: Please read the attached EE354L_VGA_A7_supplement.txt and download the additional .zip files.
+
+4/3/2023
+
+Please see the attached file: EE354L_VGA_to_HDMI_Adapter.pdf
+
+The following two VGA-to-HDMI adapters were tested and the two projects (vga_demo and vga_moving_block posted onBrightspaceunder Assignments => EE354L Lab Manual Spring 2021) worked on a HDMI Monitor and also on a TV with HDMI input.
+The Nexys-4 board itself, as part of its power-on self-test, displays an elaborate Nexys-4 advertisement screen through its VGA output port.
+This worked on the HDMI Monitor but not on the TV. Maybe it has to do with its resolution requirement.
+
+Adapters bought on amazon prime and tested:
+1. VGA to HDMI Adapter (Brand: FOINNEX) $11.99 (available on Amazon for the same price
+as of 4/3/2023)
+2. VGA to HDMI Adapter (Brand: QGeeM) $7.64 (not available on amazon currently as of 4/3/2023)
+
+The first one looks a little more professionally made.
+Conclusion: Instead of searching for a VGA monitor with a VGA cable, you can use the above method to quickly finish your project using your home TV as a VGA display.
+Gandhi  
+
+ 
+
+ 
+
+ee354_optimized_sprite_script.py
+
+EE354L_VGA_to_HDMI_Adapter.pdf
+
+VGA Demo.docx
+
+A7_EE354L_vga_demo_supplement.zip
+
+A7_vga_moving_block_supplement.zip
+
+EE354L_VGA_A7_supplement.txt
+
+EE354L_vga_demo.zip
+
+vga_moving_block.zip
+
+EE354SpriteGeneration.mp4

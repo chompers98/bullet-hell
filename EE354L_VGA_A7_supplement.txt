@@ -1,0 +1,19 @@
+10/29/2023
+
+File: EE354L_VGA_A7_supplement.txt
+
+To help with introducing using the VGA port, we have two demo projects (project folders and their zip files):
+Folder: EE354L_vga_demo  Zip file: EE354L_vga_demo.zip
+Folder: vga_moving_block  Zip file: vga_moving_block.zip 
+
+For each of the above two Nexys-4 based projects, 
+we created a _A7 supplement with three files in each (top.v, .xdc and .bit).  
+Folder: A7_EE354L_vga_demo_supplement  Zip file: A7_EE354L_vga_demo_supplement.zip
+Folder: A7_vga_moving_block_supplement  Zip file: A7_vga_moving_block_supplement.zip
+
+We posted on the Bb, the four .zip files and this text file.
+
+Thanks
+Gandhi and 
+Mehul and Viraj (EE354L TAs Fall 2023)
+

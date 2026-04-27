@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+
+# Personal note-taking / IDE configs
+.obsidian/
+.claude/settings.local.json
+
+# Reference repos and extracted demo zips (large, not source-of-truth)
+_refs/
+_extracted/
+
+# Original demo / supplement zip archives (extracted copies in _extracted/)
+*.zip
+
+# Vivado build outputs
+*.jou
+*.log
+*.str
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+*.xpr
+.Xil/
+
+# Sim build artifacts
+*.vvp
+*.vcd
+*.fst
+
+# Editor backups
+*~
+*.swp
